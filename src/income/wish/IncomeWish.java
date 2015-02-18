@@ -5,7 +5,7 @@
  */
 
 package income.wish;
-
+import java.util.Scanner;
 /**
  *
  * @author class
@@ -18,6 +18,18 @@ public class IncomeWish {
     public static void main(String[] args) {
         String name;
         int age;
+        double annualpay;
+        Scanner keyboard=new Scanner(System.in);
+        System.out.print("what is your name?  ");
+        name=keyboard.nextLine();
+        System.out.print("what is you age?   ");
+        age=keyboard.nextInt();
+        System.out.print("How much do you hope to earn?   ");
+        annualpay=keyboard.nextDouble();
+        System.out.println("MY name is "+ name+", my age is "+ age+" and I hope to earn $"+annualpay+" per year");
+        
+        
+        
     }
     
 }
